@@ -16,7 +16,7 @@ class BeforeTemplateRenderedEventListener implements IEventListener {
 
 	public function handle(Event $event): void {
 		if(!$event->isLoggedIn()) {
-			Util::addScript('cotwoclock', 'inject_iframe');
+			Util::addScript('co2clock', 'inject_iframe');
 		}
 	}
 }

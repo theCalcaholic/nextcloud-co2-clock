@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <info xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance"
 	xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
-	<id>cotwoclock</id>
+	<id>co2clock</id>
 	<name>MCC CO2 Clock</name>
 	<summary>Displays a CO2 budget clock on the Nextcloud login page</summary>
     <description><![CDATA[# MCC CO2 Clock
