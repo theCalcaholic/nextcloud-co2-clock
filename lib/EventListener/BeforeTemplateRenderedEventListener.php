@@ -8,16 +8,16 @@ use OCP\EventDispatcher\Event;
 use OCP\EventDispatcher\IEventListener;
 
 class BeforeTemplateRenderedEventListener implements IEventListener {
-	protected $request;
+    protected $request;
 
-	public function __construct(IRequest $request) {
-		$this->request = $request;
-	}
+    public function __construct(IRequest $request) {
+        $this->request = $request;
+    }
 
-	public function handle(Event $event): void {
-		if(!$event->isLoggedIn()) {
-			Util::addScript('co2clock', 'inject_iframe');
-		}
-	}
+    public function handle(Event $event): void {
+        if(!$event->isLoggedIn()) {
+            Util::addScript('co2clock', 'inject_iframe');
+        }
+    }
 }
 

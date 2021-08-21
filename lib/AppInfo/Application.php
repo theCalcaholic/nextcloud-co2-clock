@@ -15,14 +15,14 @@ use OCP\EventDispatcher\IEventDispatcher;
 use OCP\Security\CSP\AddContentSecurityPolicyEvent;
 
 class Application extends App {
-	public const APP_ID = 'co2_clock';
+    public const APP_ID = 'co2_clock';
 
-	public function __construct(array $urlParams = []) {
-		parent::__construct(self::APP_ID, $urlParams);
-		$container = $this->getContainer();
-		$dispatcher = $container->get(IEventDispatcher::class);
-		$dispatcher->addServiceListener(AddContentSecurityPolicyEvent::class, AddContentSecurityPolicyEventListener::class);
-		$dispatcher->addServiceListener(BeforeTemplateRenderedEvent::class, BeforeTemplateRenderedEventListener::class);
-	}
+    public function __construct(array $urlParams = []) {
+        parent::__construct(self::APP_ID, $urlParams);
+        $container = $this->getContainer();
+        $dispatcher = $container->get(IEventDispatcher::class);
+        $dispatcher->addServiceListener(AddContentSecurityPolicyEvent::class, AddContentSecurityPolicyEventListener::class);
+        $dispatcher->addServiceListener(BeforeTemplateRenderedEvent::class, BeforeTemplateRenderedEventListener::class);
+    }
 
 }
