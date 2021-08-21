@@ -1,8 +1,8 @@
 (function() {
   let frame = document.createElement("iframe");
   frame.setAttribute("src", "https://www.mcc-berlin.net/fileadmin/data/clock/carbon_clock.htm?i=3267263");
-  frame.style.width = "600px";
-  frame.style.height = "340px";
+  frame.style.width = "700px";
+  frame.style.height = "450px";
   frame.style.marginTop = "2em";
   frame.style.marginBottom = "2em";
 
