@@ -15,7 +15,7 @@ Source: [mcc-berlin.net](https://www.mcc-berlin.net/en/research/co2-budget.html)
     <licence>mpl</licence>
     <author mail="thecalcaholic@web.de" >Tobias K</author>
     <namespace>CoTwoClock</namespace>
-    <category>customizing</category>
+    <category>customization</category>
     <website>https://github.com/thecalcaholic/nextcloud-co2-clock</website>
     <bugs>https://github.com/thecalcaholic/nextcloud-co2-clock/issues</bugs>
     <repository>https://github.com/thecalcaholic/nextcloud-co2-clock/issues</repository>
