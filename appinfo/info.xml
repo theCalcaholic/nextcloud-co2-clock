@@ -12,7 +12,7 @@ Displays a clock showing the remaining global CO2 budget (and the time we will h
 
 Source: [mcc-berlin.net](https://www.mcc-berlin.net/en/research/co2-budget.html)]]></description>
     <version>0.1.0</version>
-    <licence>mit</licence>
+    <licence>mpl</licence>
     <author mail="thecalcaholic@web.de" >Tobias K</author>
     <namespace>CoTwoClock</namespace>
     <category>customizing</category>
