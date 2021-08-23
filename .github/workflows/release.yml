@@ -14,7 +14,7 @@ jobs:
         set -x
         tar -caf co2clock.tar.gz appinfo js lib
         tag_name="${GITHUB_REF##*/}"
-        hub release create co2clock.tar.gz -m "$tag_name" "$tag_name"
+        hub release create -a co2clock.tar.gz -m "$tag_name" "$tag_name"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
