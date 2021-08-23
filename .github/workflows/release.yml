@@ -1,0 +1,19 @@
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: "Create release"
+      run: |
+        tar -caf co2clock.tar.gz appinfo js lib
+        tag_name="${GITHUB_REF##*/}"
+        hub release create co2clock.tar.gz -m "$tag_name" "$tag_name"
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
