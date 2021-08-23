@@ -11,6 +11,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: "Create release"
       run: |
+        set -x
         tar -caf co2clock.tar.gz appinfo js lib
         tag_name="${GITHUB_REF##*/}"
         hub release create co2clock.tar.gz -m "$tag_name" "$tag_name"
