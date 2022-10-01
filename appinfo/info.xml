@@ -18,6 +18,6 @@ Source for the clock: [mcc-berlin.net](https://www.mcc-berlin.net/en/research/co
     <screenshot>https://github.com/theCalcaholic/nextcloud-co2-clock/raw/main/preview/co2clock.png</screenshot>
     <screenshot>https://github.com/theCalcaholic/nextcloud-co2-clock/raw/main/preview/login.png</screenshot>
     <dependencies>
-        <nextcloud min-version="20" max-version="24" />
+        <nextcloud min-version="20" max-version="26" />
     </dependencies>
 </info>
